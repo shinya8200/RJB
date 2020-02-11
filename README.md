@@ -4,22 +4,17 @@
 ----------------------------------------------------------------------
 
 ●はじめに
-
   ダウンロードありがとうございます。
   RulerJBは匡郭検出ツールです。
 
 ●動作環境
-
   Windows10 64bit で動作確認を行っています。
 
 ●使用方法
-  【起動方法】
-    プログラム(RulerJB.exe)を実行して下さい。
-　詳細な利用方法はresearchmapの宮川真弥のページ（https://researchmap.jp/shinya8200）の研究ブログ(https://researchmap.jp/blogs/blog_entries/view/82454/0435f61bde82d8a21e4cf694b252941a?frame_id=689859)にありますのでご覧ください。
+  【起動方法】プログラム(RulerJB.exe)を実行して下さい。
+　詳細な利用方法はresearchmapの宮川真弥のページ(https://researchmap.jp/shinya8200)の研究ブログ(https://researchmap.jp/blogs/blog_entries/view/82454/0435f61bde82d8a21e4cf694b252941a?frame_id=689859)にありますのでご覧ください。
 
-本プログラムはGNU GPLv3(GNU General Public License v3.0)で公開します。
 ●著作権・免責
-
   本ソフトウェアはGNU GPLv3(GNU General Public License v3.0)で公開しています。
   本ソフトウェアの著作権は作者である宮川真弥(MIYAGAWA Shinya)が保有します。
   本ソフトウェアを使用する事で生じたいかなる損害も、作者は一切の責任を負いません。
