@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{318236A3-6CF6-42C8-A957-22745C3AD7F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RulerJB</RootNamespace>
+    <AssemblyName>RulerJB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>R-2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevelopLog">
+      <HintPath>..\RequestQueueProjectDll_Net4_0用\DevelopLog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.CPlusPlus">
+      <HintPath>..\OpenCvSharp-2.4-x86-20121010\OpenCvSharp.CPlusPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.DebuggerVisualizers">
+      <HintPath>..\OpenCvSharp-2.4-x86-20121010\OpenCvSharp.DebuggerVisualizers.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Gpu">
+      <HintPath>..\OpenCvSharp-2.4-x86-20121010\OpenCvSharp.Gpu.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.MachineLearning">
+      <HintPath>..\OpenCvSharp-2.4-x86-20121010\OpenCvSharp.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="RequestQueue">
+      <HintPath>..\RequestQueueProjectDll_Net4_0用\RequestQueue.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoDetectLines.cs" />
+    <Compile Include="BookProject.cs" />
+    <Compile Include="BookROI.cs" />
+    <Compile Include="ConfigCommandKeys.cs" />
+    <Compile Include="CreateDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDirectory.Designer.cs">
+      <DependentUpon>CreateDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetectTypeROI.cs" />
+    <Compile Include="FormAdjustPixelSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdjustPixelSize.Designer.cs">
+      <DependentUpon>FormAdjustPixelSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExecAllAutoDetect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExecAllAutoDetect.Designer.cs">
+      <DependentUpon>FormExecAllAutoDetect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPleasWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPleasWait.Designer.cs">
+      <DependentUpon>FormPleasWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVersion.Designer.cs">
+      <DependentUpon>FormVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDetectProc.cs" />
+    <Compile Include="IXmlProject.cs" />
+    <Compile Include="ManifestInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManifestInput.Designer.cs">
+      <DependentUpon>ManifestInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageMeasureData.cs" />
+    <Compile Include="FileOpenProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileOpenProgressBar.Designer.cs">
+      <DependentUpon>FileOpenProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJB_Utility.cs" />
+    <Compile Include="ImageLib.cs" />
+    <Compile Include="CommonValues.cs" />
+    <Compile Include="DataGridViewLib.cs" />
+    <Compile Include="FormColorImageS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormColorImageS.Designer.cs">
+      <DependentUpon>FormColorImageS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinePair.cs" />
+    <Compile Include="PageDataRJB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="BookDataRJB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyGridLib.cs" />
+    <Compile Include="RangeValue.cs" />
+    <Compile Include="ScalablePbox.cs" />
+    <Compile Include="ConfigurationData.cs" />
+    <Compile Include="ShapeLine.cs" />
+    <Compile Include="ShapeLineEx.cs" />
+    <Compile Include="UsBitMap.cs" />
+    <Compile Include="BookProjectSetData.cs" />
+    <EmbeddedResource Include="CreateDirectory.resx">
+      <DependentUpon>CreateDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdjustPixelSize.resx">
+      <DependentUpon>FormAdjustPixelSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormColorImageS.resx">
+      <DependentUpon>FormColorImageS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExecAllAutoDetect.resx">
+      <DependentUpon>FormExecAllAutoDetect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPleasWait.resx">
+      <DependentUpon>FormPleasWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVersion.resx">
+      <DependentUpon>FormVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManifestInput.resx">
+      <DependentUpon>ManifestInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileOpenProgressBar.resx">
+      <DependentUpon>FileOpenProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LedPanel.dll" />
+    <Content Include="OpenCvSharpExtern.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_calib3d240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_calib3d240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_contrib240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_contrib240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_core240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_core240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_features2d240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_features2d240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_flann240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_flann240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_gpu240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_gpu240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_highgui240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_highgui240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_imgproc240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_imgproc240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_legacy240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_legacy240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_ml240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_ml240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_nonfree240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_nonfree240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_objdetect240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_objdetect240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_photo240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_photo240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_stitching240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_stitching240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_ts240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_ts240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_video240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_video240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_videostab240.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="opencv_videostab240d.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>OpenCvSharpExtern.dll</DependentUpon>
+    </Content>
+    <Content Include="R-1.ico" />
+    <Content Include="R-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
