@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BookProject>
+  <SetData>
+    <HightPaperSizeMM>250</HightPaperSizeMM>
+    <PixelPerMm>0</PixelPerMm>
+    <RoiPTL>Point(0,0) Size(0,0)</RoiPTL>
+    <RoiPBL>Point(0,0) Size(0,0)</RoiPBL>
+    <RoiGTL>Point(0,0) Size(0,0)</RoiGTL>
+    <RoiGBL>Point(0,0) Size(0,0)</RoiGBL>
+    <RoiPTR>Point(0,0) Size(0,0)</RoiPTR>
+    <RoiPBR>Point(0,0) Size(0,0)</RoiPBR>
+    <RoiGTR>Point(0,0) Size(0,0)</RoiGTR>
+    <RoiGBR>Point(0,0) Size(0,0)</RoiGBR>
+  </SetData>
+  <BookData>
+    <PageDataList>
+      <IsValidate>False</IsValidate>
+      <IsChanged>False</IsChanged>
+      <FilePath>https:\/\/kotenseki.nijl.ac.jp\/api\/iiif\/200003354\/v4\/0035\/0035-007402\/0035-007402-0006.tif\/full\/full\/0\/default.jpg</FilePath>
+      <PageIdx>0</PageIdx>
+      <SideL>
+        <IsValidate>False</IsValidate>
+        <IsChanged>False</IsChanged>
+        <HeightPixPaper>0</HeightPixPaper>
+        <HeightPixGrid>0</HeightPixGrid>
+      </SideL>
+      <SideR>
+        <IsValidate>False</IsValidate>
+        <IsChanged>False</IsChanged>
+        <HeightPixPaper>0</HeightPixPaper>
+        <HeightPixGrid>0</HeightPixGrid>
+      </SideR>
+      <PixToMm>0</PixToMm>
+      <ImageWidth>0</ImageWidth>
+      <ImageHeight>0</ImageHeight>
+      <IsAutoDetect>False</IsAutoDetect>
+    </PageDataList>
+    <CommonFolderPath>https:\kotenseki.nijl.ac.jp\api\iiif\200003354\v4\0035\0035-007402\0035-007402-0006.tif\full\full\0</CommonFolderPath>
+  </BookData>
+</BookProject>
