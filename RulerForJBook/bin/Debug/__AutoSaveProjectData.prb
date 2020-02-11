@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BookProject>
+  <SetData>
+    <IsUseHeightPaper>False</IsUseHeightPaper>
+    <HightPaperSizeMM>250</HightPaperSizeMM>
+    <PixelPerMm>11.81102</PixelPerMm>
+    <RoiPTL>Point(324,53) Size(107,107)</RoiPTL>
+    <RoiPBL>Point(324,1562) Size(107,107)</RoiPBL>
+    <RoiGTL>Point(324,161) Size(107,107)</RoiGTL>
+    <RoiGBL>Point(324,1454) Size(107,107)</RoiGBL>
+    <RoiPTR>Point(2106,53) Size(107,107)</RoiPTR>
+    <RoiPBR>Point(2106,1562) Size(107,107)</RoiPBR>
+    <RoiGTR>Point(2106,161) Size(107,107)</RoiGTR>
+    <RoiGBR>Point(2106,1454) Size(107,107)</RoiGBR>
+  </SetData>
+  <BookData>
+    <PageDataList>
+      <IsValidate>False</IsValidate>
+      <IsChanged>True</IsChanged>
+      <FilePath>D:\Akasaki\宮川先生\大阪大学_和書2線間の距離の自動測定(2013)\2015\★画像データ\円機活法韻学（早稲田）\bunko06_01049_0001_p0006.jpg</FilePath>
+      <PageIdx>0</PageIdx>
+      <SideL>
+        <IsValidate>False</IsValidate>
+        <IsChanged>True</IsChanged>
+        <HeightPixPaper>1505</HeightPixPaper>
+        <HeightPixGrid>1342</HeightPixGrid>
+        <MeasurePaper>(377,111)-(377,1616)</MeasurePaper>
+        <MeasureGrid>(377,210)-(377,1552)</MeasureGrid>
+      </SideL>
+      <SideR>
+        <IsValidate>False</IsValidate>
+        <IsChanged>True</IsChanged>
+        <HeightPixPaper>1517</HeightPixPaper>
+        <HeightPixGrid>1354</HeightPixGrid>
+        <MeasurePaper>(2159,117)-(2159,1634)</MeasurePaper>
+        <MeasureGrid>(2159,219)-(2159,1573)</MeasureGrid>
+      </SideR>
+      <PixToMm>0</PixToMm>
+      <ImageWidth>2592</ImageWidth>
+      <ImageHeight>1724</ImageHeight>
+      <IsAutoDetect>False</IsAutoDetect>
+    </PageDataList>
+    <CommonFolderPath>D:\Akasaki\宮川先生\大阪大学_和書2線間の距離の自動測定(2013)\2015\★画像データ\円機活法韻学（早稲田）</CommonFolderPath>
+  </BookData>
+</BookProject>
